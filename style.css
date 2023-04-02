@@ -1,16 +1,26 @@
+/* * {
+  border: solid 2px red;
+} */
+
 html {
   font-size: 10px;
+  background-image: url("./image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 
+
 .keys {
   display: flex;
+  flex-wrap: wrap;
   flex: 1;
   min-height: 100vh;
   align-items: center;
@@ -18,7 +28,7 @@ body,html {
 }
 
 .key {
-  border: .4rem solid black;
+  border: .4rem solid rgb(167, 130, 12);
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -27,8 +37,13 @@ body,html {
   width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(71, 0, 104, 0.8);
   text-shadow: 0 0 .5rem black;
+}
+
+.key:hover {
+  background-color: blueviolet;
+  border: .4rem solid rgb(212, 167, 17);
 }
 
 .playing {
